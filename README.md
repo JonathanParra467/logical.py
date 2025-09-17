@@ -1,0 +1,2 @@
+# logical.py
+class work
