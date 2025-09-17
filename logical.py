@@ -1,3 +1,16 @@
+"""
+User Input: Start by asking the user to input two distinct integers. 
+Logical Operators: Implement six different logical comparisons using the input integers. Include two examples for each of the following operators:
+and
+or
+not
+Display Results: Print the logical statement and its result for each comparison.
+Guidelines for Logical Comparisons:
+Ensure that your comparisons are meaningful and not too obvious (e.g., avoid comparisons like num1 == num1).
+Try to use comparisons that could yield different results based on user input.
+Sample Output: Here's an example of what your program's output might look like:
+"""
+
 print(int(input("enter a number: ")))
 print(int(input("enter another number: ")))
 
