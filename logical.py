@@ -11,43 +11,26 @@ Try to use comparisons that could yield different results based on user input.
 Sample Output: Here's an example of what your program's output might look like:
 """
 
-print(int(input("enter a number: ")))
-print(int(input("enter another number: ")))
+num1 = int(input("Enter the first integer: "))
+num2 = int(input("Enter the second integer (different from the first): "))
 
-A = 10
+print("\nLogical Comparisons:\n")
 
-B = 20
+result1 = (num1 > 0) and (num2 > 0)
+print(f"Both numbers are positive:{result1}")
 
-C = 30
+result2 = (num1 % 2 == 0) and (num2 % 2 == 0)
+print(f"Both numbers are even: {result2}")
 
-if A > B and A > C:
-    print("this number is lower then 10 ")
-elif A < B and A < C:
-    print("the number is higher then 10")
-else: print("your number is 10")
+result3 = (num1 < 0) or (num2 < 0)
+print(f"At least one number is negative: {result3}")
 
-if B > C and B > A:
-    print("your number is lower then 10 ")
-elif B < C and B < A:
-    print("your number is higher then 10")
-else: print("Your number is 20")
+result4 = (num1 == 10) or (num2 == 10)
+print(f"At least one number is 10: {result4}")
 
-if C > A or C > B:
-    print("your number is in between 10 and 30")
-elif C < A or C < B:
-    print("your number is between 20 and 30")
-else: print("your number is 30")
+result5 = not (num1 == num2)
+print(f"The numbers are not equal: {result5}")
 
-if A < C or A < B:
-    print("your number is lower then 20")
-elif B < C or B > A:
-    print("your number is in between 10 and 30")
-else: print("your number is 10")
+result6 = not ((num1 < 0) or (num2 < 0))
+print(f"Neither number is negative: {result6}")
 
-if not B > A:
-    print("Your number is higher then 10 ")
-else: print("your number is 20")
-
-if not C > B:
-    print("Your number is higher then 20 ")
-else: print("your number is 30")
